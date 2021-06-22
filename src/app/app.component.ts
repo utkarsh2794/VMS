@@ -9,7 +9,7 @@ import { ServerUtilityService } from './server-utility.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'VMS';
+  title = 'CustomerInfo';
   links = [
     {
       label: 'Customer',
