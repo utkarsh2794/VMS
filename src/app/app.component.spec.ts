@@ -8,7 +8,7 @@ import { HeaderComponent } from './header/header.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent,HeaderComponent],
+      declarations: [AppComponent, HeaderComponent],
       imports: [HttpClientTestingModule, RouterTestingModule],
       providers: [ServerUtilityService],
     }).compileComponents();
@@ -25,6 +25,4 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('CustomerInfo');
   });
-
-
 });
