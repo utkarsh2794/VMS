@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<div class="container">
+  <nav mat-tab-nav-bar [backgroundColor]="background">
+    <a mat-tab-link *ngFor="let link of links"
+       (click)="activeLink = link"
+       routerLinkActive #rla="routerLinkActive"
+       [routerLink]="link.link"
+       [active]="activeLink == link"> {{link.label}} </a>
+  </nav>
+  
+  <router-outlet></router-outlet>
+</div>

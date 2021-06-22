@@ -1,0 +1,6 @@
+
+  
+<mat-list>
+    <mat-list-item style="cursor: pointer" *ngFor="let user of server.users" [routerLink]="['/customer-details', user.id ]" [routerLinkActive]="['is-active']"> {{user.name}} </mat-list-item>
+</mat-list>
+  
